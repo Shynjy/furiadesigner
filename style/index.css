@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+}
+
+.content .logo {
+    position: relative;
+    background: url("../images/logofuria.png") no-repeat;
+    width: 300px;
+    height: 255px;
+    margin-bottom: 30px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    color: #EF404A;
+    text-align: center;
+}
