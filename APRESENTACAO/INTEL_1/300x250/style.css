@@ -1,0 +1,405 @@
+/* reset */
+
+html, body, object, img {
+    margin: 0;
+    padding: 0;
+	}
+
+a:active, a:hover { outline: 0; }
+img { border: 0; }
+
+/* structure */
+
+#content{
+	width: 300px;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+	background: url(images/bg1.jpg) 0px 0px no-repeat;
+    /*background: #050b2e;*/
+	}
+
+#border{
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 298px;
+    height: 248px;
+    overflow: hidden;
+    display: block;
+    border: 1px solid #000000;
+	z-index: 800;
+}
+
+/* elements */
+
+#overlay, #bg1, #bg2, #logo, #copy1a, #copy1b, #copy1c, #copy2a, #copy2b, #copy2c, #copy3a, #copy3b, #copyEnd, #cta, #retail, #badges_end, #left_badge, #left_badge_shadow, #right_badge, #right_badge_shadow, #device, #outline1, #outline2, #outline3, #colour_wheel, #logo1, #logo2, #spark, #device, #legal-1, #legal-2, #legal-open {
+    width: 300px;
+	height: 250px;
+	display: block;
+	opacity: 0;
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+	}
+
+#bg1{ background: url(images/bg1.jpg) 0 0 no-repeat; z-index: 101; opacity: 1;}
+#bg2{ background: url(images/bg2.jpg) 0 0 no-repeat; z-index: 200; opacity: 0;}
+#overlay{ z-index: 990; opacity: 0; background: #000000;}
+
+#logo1{ background: url(images/logo1.png) 0 0 no-repeat; z-index: 150; opacity: 1;}
+#logo2{ background: url(images/logo2.png) 0 0 no-repeat; z-index: 300; opacity: 0;}
+
+#colour_wheel{ background: url(images/colour_wheel.png) 0 0 no-repeat; z-index: 150; opacity: 0;}
+
+#outline1{ background: url(images/outline_1.png) 0 0 no-repeat; z-index: 120; opacity: 0;}
+#outline2{ background: url(images/outline_2.png) 0 0 no-repeat; z-index: 120; opacity: 0;}
+#outline3{ background: url(images/outline_3.png) 0 0 no-repeat; z-index: 120; opacity: 0;}
+
+#spark{ background: url(images/spark.png) 0 0 no-repeat; z-index: 270; opacity: 0;}
+
+#copy1a{ background: url(images/copy1a.png) 0 0 no-repeat; left: 300px; z-index: 140; opacity: 1;}
+#copy1b{ background: url(images/copy1b.png) 0 0 no-repeat; left: 300px; z-index: 140; opacity: 1;}
+#copy1c{ background: url(images/copy1c.png) 0 0 no-repeat; left: 300px; z-index: 140; opacity: 1;}
+
+#copy2a{ background: url(images/copy2a.png) 0 0 no-repeat; left: 300px; z-index: 260; opacity: 1;}
+#copy2b{ background: url(images/copy2b.png) 0 0 no-repeat; left: 300px; z-index: 260; opacity: 1;}
+#copy2c{ background: url(images/copy2c.png) 0 0 no-repeat; left: 300px; z-index: 260; opacity: 1;}
+
+#copy3a{ background: url(images/copy3a.png) 0 0 no-repeat; z-index: 260; width: 198px; height: 117px; top: -117px; left: -198px; opacity: 1;}
+#copy3b{ background: url(images/copy3b.png) 0 0 no-repeat; z-index: 260; opacity: 0;}
+
+#copyEnd{ background: url(images/copyEnd.png) 0 0 no-repeat; left: -300px; z-index: 260; opacity: 1;}
+#cta{ background: url(images/cta.png) 0 0 no-repeat; left: -300px; z-index: 280; opacity: 1;}
+#retail{ background: url(images/retail.png) 0 0 no-repeat; z-index: 280; opacity: 0;}
+
+#badges_end{ background: url(images/badges_end.png) 0 0 no-repeat; z-index: 260; left: -300px; opacity: 1;}
+#left_badge{ background: url(images/left_badge.png) 0 0 no-repeat; z-index: 260; left: 0px; opacity: 1;}
+#left_badge_shadow{ background: url(images/left_badge_shadow.png) 0 0 no-repeat; z-index: 260; left: 0px; opacity: 1;}
+#right_badge{ background: url(images/right_badge.png) 0 0 no-repeat; z-index: 260; left: 0px; opacity: 1;}
+#right_badge_shadow{ background: url(images/right_badge_shadow.png) 0 0 no-repeat; z-index: 260; left: 0px; opacity: 1;}
+
+#deviceHolder{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	overflow: hidden;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    z-index: 250;
+}
+
+#device{
+	z-index: 250;
+	opacity: 0;
+	transform-origin: 116px 192px;
+	background: url(images/device.png) 0 0 no-repeat;
+	-webkit-transform: scale(0.05) translate(-2px,-82px);
+	-moz-transform: scale(0.05) translate(-2px,-82px);
+	-ms-transform: scale(0.05) translate(-2px,-82px);
+	-o-transform: scale(0.05) translate(-2px,-82px);
+	transform: scale(0.05) translate(-2px,-82px);
+}
+
+
+#copyHolder{
+	width: 198px;
+	height: 117px;
+	display: block;
+	position: absolute;
+	overflow: hidden;
+    top: 64px;
+    left: 51px;
+    opacity: 1;
+    z-index: 260;
+}
+
+
+#leftHolder{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	overflow: hidden;
+    top: 0px;
+    left: 300px;
+    opacity: 1;
+    z-index: 260;
+}
+
+#rightHolder{
+	width: 300px;
+	height: 250px;
+	display: block;
+	position: absolute;
+	overflow: hidden;
+    top: 0px;
+    left: 300px;
+    opacity: 1;
+    z-index: 260;
+}
+
+#legal-1{
+	top: 0;
+	left: 0;
+	z-index: 999;
+	opacity: 0;
+	background: url(images/legal_1.png) 0px 0px no-repeat;
+	}
+
+#legal-2{
+	top: 0;
+	left: 0;
+	z-index: 989;
+	opacity: 0;
+	background: url(images/legal_2.png) 0 0 no-repeat;
+	}
+
+#legal-open{
+    position: absolute;
+    width: 49px;
+    height: 20px;
+    top: 230px;
+    left: 250px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 9999;
+	display: none;
+    }
+
+a.click-through{
+     position: absolute;
+     width: 300px;
+     height: 250px;
+     top: 0px;
+     left: 0px;
+     cursor: pointer;
+     opacity: 0;
+     z-index: 999;
+     background: #ffffff;
+}
+
+
+.show{
+	display: block !important;
+	}
+
+/* Animations */
+
+.animClass {
+	-webkit-transform: translate3d(0, 0, 0); /* Force Hardware Acceleration */
+}
+	
+/* transitions */	
+
+.transition-1{
+	-webkit-transition: all 0.6s linear;
+	-ms-transition: all 0.6s linear;
+	-moz-transition: all 0.6s linear;
+	transition: all 0.6s linear;
+/*	
+	-webkit-transition: all 0.6s cubic-bezier(.66,.44,.85,.63);
+	-ms-transition: all 0.6s cubic-bezier(.66,.44,.85,.63);
+	-moz-transition: all 0.6s cubic-bezier(.66,.44,.85,.63);
+	transition: all 0.6s cubic-bezier(.66,.44,.85,.63);*/
+}
+
+.transition-2{
+	-webkit-transition: all 0.15s ease-in;
+	-ms-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out ;
+	transition: all 0.15s ease-out ;
+}
+
+.transition-3{
+	-webkit-transition: all 0.35s ease-out;
+	-ms-transition: all 0.35s ease-out;
+	-moz-transition: all 0.35s ease-out;
+	transition: all 0.35s ease-out;
+}
+
+.transition-4{
+	-webkit-transition: all 0.7s ease-out;
+	-ms-transition: all 0.7s ease-out;
+	-moz-transition: all 0.7s ease-out;
+	transition: all 0.7s ease-out;
+}
+
+.transition-5{
+	-webkit-transition: all 4s linear;
+	-ms-transition: all 4s linear;
+	-moz-transition: all 4s linear;
+	transition: all 4s linear;
+}
+
+/* fucntions */
+
+.figureScale{
+	-webkit-transform: scale(1) translate( 10px, -76px) rotate(0.01deg) !important;
+	-moz-transform: scale(1) translate( 10px, -76px) rotate(0.01deg) !important;
+	-ms-transform: scale(1) translate( 10px, -76px) rotate(0.01deg) !important;
+	-o-transform: scale(1) translate( 10px, -76px) rotate(0.01deg) !important;
+	transform: scale(1) translate( 10px, -76px) rotate(0.01deg) !important;
+}
+
+.deviceScale{
+	-webkit-transform: scale(1) translate( 0px, 0px) rotate(0.01deg) !important;
+	-moz-transform: scale(1) translate( 0px, 0px) rotate(0.01deg) !important;
+	-ms-transform: scale(1) translate( 0px, 0px) rotate(0.01deg) !important;
+	-o-transform: scale(1) translate( 0px, 0px) rotate(0.01deg) !important;
+	transform: scale(1) translate( 0px, 0px) rotate(0.01deg) !important;
+}
+
+
+.bgScale{
+	-webkit-transform: scale(1.1) translate( 0px, 0px) rotate(0.01deg) !important;
+	-moz-transform: scale(1.1) translate( 0px, 0px) rotate(0.01deg) !important;
+	-ms-transform: scale(1.1) translate( 0px, 0px) rotate(0.01deg) !important;
+	-o-transform: scale(1.1) translate( 0px, 0px) rotate(0.01deg) !important;
+	transform: scale(1.1) translate( 0px, 0px) rotate(0.01deg) !important;
+}
+
+.bgMove{
+	-webkit-transform: scale(1) translate( -700px, 0px) rotate(0.01deg) !important;
+	-moz-transform: scale(1) translate( -700px, 0px) rotate(0.01deg) !important;
+	-ms-transform: scale(1) translate( -700px, 0px) rotate(0.01deg) !important;
+	-o-transform: scale(1) translate( -700px, 0px) rotate(0.01deg) !important;
+	transform: scale(1) translate( -700px, 0px) rotate(0.01deg) !important;
+}
+
+.cursorMove{
+	-webkit-transform: translate( -3px, 17px) rotate(0.01deg) !important;
+	-moz-transform: translate( -3px, 17px) rotate(0.01deg) !important;
+	-ms-transform: translate( -3px, 17px) rotate(0.01deg) !important;
+	-o-transform: translate( -3px, 17px) rotate(0.01deg) !important;
+	transform: translate( -3px, 17px) rotate(0.01deg) !important;
+}
+
+.copyMove{
+	-webkit-transform: translate( 198px, 117px) rotate(0.01deg) !important;
+	-moz-transform: translate( 198px, 117px) rotate(0.01deg) !important;
+	-ms-transform: translate( 198px, 117px) rotate(0.01deg) !important;
+	-o-transform: translate( 198px, 117px) rotate(0.01deg) !important;
+	transform: translate( 198px, 117px) rotate(0.01deg) !important;
+}
+
+.right{
+	-webkit-transform: translate(300px,0px) rotate(0.01deg) !important;
+	-moz-transform: translate(300px,0px) rotate(0.01deg) !important;
+	-ms-transform: translate(300px,0px) rotate(0.01deg) !important;
+	-o-transform: translate(300px,0px) rotate(0.01deg) !important;
+	transform: translate(300px,0px) rotate(0.01deg) !important;
+}
+
+.left{
+	-webkit-transform: translate(-300px,0px) rotate(0.01deg) !important;
+	-moz-transform: translate(-300px,0px) rotate(0.01deg) !important;
+	-ms-transform: translate(-300px,0px) rotate(0.01deg) !important;
+	-o-transform: translate(-300px,0px) rotate(0.01deg) !important;
+	transform: translate(-300px,0px) rotate(0.01deg) !important;
+}
+
+.lefter{
+	-webkit-transform: translate(-600px,0px) rotate(0.01deg) !important;
+	-moz-transform: translate(-600px,0px) rotate(0.01deg) !important;
+	-ms-transform: translate(-600px,0px) rotate(0.01deg) !important;
+	-o-transform: translate(-600px,0px) rotate(0.01deg) !important;
+	transform: translate(-600px,0px) rotate(0.01deg) !important;
+}
+
+
+/* fades */
+
+.fade-in{ opacity: 1 !important; }
+
+.fade-out{ opacity: 0 !important; }
+
+.fade-half{ opacity: 0.9 !important; }
+
+/* keyframes */
+
+.FloatEffect{
+	animation-duration: 4s;
+	animation-iteration-count: 10;/*number of loops*/
+	animation-timing-function: linear;
+	animation-name: floatAnim;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 10;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: floatAnim;
+	-webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: 10;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: floatAnim;
+	-moz-animation-direction: alternate;
+    -moz-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes floatAnim {
+	0%      { transform: translate(0px, 0px)  rotate(0.01deg) }
+	50%      { transform: translate(0px, 6px) rotate(0.01deg) }
+	100%      { transform: translate(0px, 0px) rotate(0.01deg) }
+}
+
+@keyframes floatAnim {
+	0%      { transform: translate(0px, 0px) rotate(0.01deg) }
+	50%      { transform: translate(0px, 6px) rotate(0.01deg) }
+	100%      { transform: translate(0px, 0px) rotate(0.01deg) }
+}
+
+@-moz-keyframes floatAnim {
+	0%      { transform: translate(0px, 0px) rotate(0.01deg) }
+	50%      { transform: translate(0px, 6px) rotate(0.01deg) }
+	100%      { transform: translate(0px, 0px) rotate(0.01deg) }
+}
+
+
+.ShadowEffect{
+	animation-duration: 4s;
+	animation-iteration-count: 10;/*number of loops*/
+	animation-timing-function: linear;
+	animation-name: shadowAnim;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 10;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: shadowAnim;
+	-webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: 10;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: shadowAnim;
+	-moz-animation-direction: alternate;
+    -moz-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes shadowAnim {
+	0%      { opacity: 1; }
+	50%     { opacity: 0.6; }
+	100%      { opacity: 1; }
+}
+
+@keyframes shadowAnim {
+	0%      { opacity: 1; }
+	50%     { opacity: 0.6; }
+	100%      { opacity: 1; }
+}
+
+@-moz-keyframes shadowAnim {
+	0%      { opacity: 1; }
+	50%     { opacity: 0.6; }
+	100%      { opacity: 1; }
+}

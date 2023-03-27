@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="ad.size" content="width=300,height=250">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/adKit/adkit.js"></script>
+
+    <link rel="stylesheet" media="all" href="./style.css">
+</head>
+
+<body>
+
+    <div id="content">
+        <div id="banner" class="format fhc">
+
+            <div id="bg1" class="format"></div>
+
+            <div id="dulce" class="format"></div>
+            <div id="mango" class="format"></div>
+            <div id="strawberry" class="format"></div>
+            <div id="vanilla" class="format"></div>
+            <div id="cookies" class="format"></div>
+
+            <div id="maodulce" class="format"></div>
+            <div id="maomango" class="format"></div>
+            <div id="maostrawberry" class="format"></div>
+            <div id="maovanilla" class="format"></div>
+            <div id="maocookies" class="format"></div>
+
+            <div id="taca" class="format"></div>
+
+            <div id="copy1" class="format"></div>
+
+            <div id="copy2" class="format"></div>
+
+            <div id="copy3" class="format"></div>
+
+            <div id="bg3" class="format"></div>
+
+            <div id="footer"></div>
+            <div id="cta" class="format"></div>
+            <div id="seta" class="format"></div>
+            <div id="logo" class="format"></div>
+            <div id="logo2" class="format"></div>
+
+            <!-- Clicktag default -->
+            <a id="btn" class="click-through"></a>​
+        </div>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript">
+        function checkIfAdKitReady(event) {
+            adkit.onReady(function () {
+                document.getElementById('click-through').addEventListener('click', handleClick);
+            })
+        }
+        function handleClick() {
+            // Default clickthrough with url defined in platform
+            EB.clickthrough();
+            // Custom clickthrough named "Customized-Click-1" with url defined in platform
+            EB.clickthrough('Customized-Click-1');
+            // Custom clickthrough named "Customized-Click-2" with url defined in code
+            EB.clickthrough('Customized-Click-2', "https://www.sizmek.com");
+        }
+
+        window.addEventListener('load', checkIfAdKitReady);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+//CONSTANTES
+// Formato do banner
+$width: 728px;
+$height: 90px;
+
+// Cor da borda
+$cor-borda: #999999;
+
+//RESET
+html,
+body,
+object,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+//RESET TAG A
+a,
+a:active,
+a:hover {
+    outline: none;
+}
+
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+a.click-through {
+    cursor: pointer !important;
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    background: transparent;
+}
+
+//MAIN DIV
+#content {
+    position: absolute;
+    display: block;
+    width: $width;
+    height: $height;
+}
+
+//RESET BANNER
+#banner {
+    background-color: #ffffff;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+//BORDA BANNER
+#content::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: $width;
+    height: $height;
+    top: 0px;
+    left: 0px;
+    border: 1px;
+    border-style: solid;
+    border-color: $cor-borda;
+    opacity: 0.5;
+    box-sizing: border-box;
+    pointer-events: none;
+    user-select: none;
+}
+
+//FORMATO GERAL
+.format {
+    position: absolute;
+    display: block;
+    width: $width;
+    height: $height;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+// LINKs (CASO PRECISE COLOQUE O FORMATO MANUALMENTE)
+#logo {
+    background: url(./images/logo.png) 0px 0px no-repeat;
+    background-size: $width $height;
+}
+
+#logo2 {
+    background: url(./images/logo2.png) 0px 0px no-repeat;
+    background-size: $width $height;
+}
+
+#pack {
+    position: absolute;
+    width: 336px;
+    height: 221px;
+    background: url(./images/pack.png) 0px 0px no-repeat;
+}
+
+#bg1 {
+    background: url(./images/bg1.jpg) 0px 0px no-repeat;
+    background-size: $width $height;
+}
+
+#bg2 {
+    background: url(./images/bg2.jpg) 0px 0px no-repeat;
+    background-size: $width $height;
+}
+
+#bg3 {
+    background: url(./images/bg3.jpg) 0px 0px no-repeat;
+    background-size: $width $height;
+}
+
+#bg4 {
+    background: url(./images/bg1.jpg) 0px 0px no-repeat;
+    background-size: $width $height;
+}
+
+#box {
+    position: absolute;
+    width: 0px;
+    height: $height;
+    overflow: hidden;
+}
+
+#footer {
+    position: absolute;
+    display: block;
+    left: 618px;
+    width: 110px;
+    height: $height;
+    background-color: #000000;
+}
+
+
+#ball {
+    position: absolute;
+    display: block;
+    width: 97px;
+    height: 97px;
+    background: url(./images/ball.png) 0px 0px no-repeat;
+    background-size: 97px 97px;
+}
+
+#shadow {
+    position: absolute;
+    display: block;
+    width: 109px;
+    height: 227px;
+    top: 10px;
+    left: -50px;
+    background: url(./images/shadow.png) 0px 0px no-repeat;
+}
+
+#spoon {
+    position: absolute;
+    display: block;
+    width: 144px;
+    height: 248px;
+    background: url(./images/spoon.png) 0px 0px no-repeat;
+    background-size: 144px 248px;
+}
+
+#copy1 {
+    background: url(./images/copy1.png) 0px 0px no-repeat;
+    background-size: $width $height;
+}
+
+#copy2 {
+    background: url(./images/copy2.png) 0px 0px no-repeat;
+    background-size: $width $height;
+}
+
+#copy3 {
+    background: url(./images/copy3.png) 0px 0px no-repeat;
+    background-size: $width $height;
+}
+
+#copy4 {
+    background: url(./images/copy1.png) 0px 0px no-repeat;
+    background-size: $width $height;
+}
+
+#cta {
+    background: url(./images/cta.png) 0px 0px no-repeat;
+    background-size: $width $height;
+}
+
+#seta {
+    background: url(./images/seta.png) 0px 0px no-repeat;
+    background-size: $width $height;
+}
+
+//Force Hardware Acceleration
+.fhc {
+    transform: translate3d(0, 0, 0);
+}

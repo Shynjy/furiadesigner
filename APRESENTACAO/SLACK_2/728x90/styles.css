@@ -1,0 +1,46 @@
+#banner-container,* {
+margin:0;padding:0;border:0;
+-webkit-box-sizing:border-box;box-sizing:border-box;
+}
+
+#banner,#banner-container {
+width:728px;
+height:90px;
+overflow:hidden;
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+position:relative;
+font-family:Helvetica,sans-serif;
+letter-spacing:1px;
+font-size:12px;
+background-color:#4a154b;
+}
+#banner {border:1px solid black;}
+#banner:hover {
+cursor:pointer;
+}
+
+#banner img, #banner div, #banner svg, #banner video {position: absolute;}
+.fadein {opacity:0}
+.width {width:100%}
+.left {margin-left:-10px}
+.top {margin-top:20px}
+.top2 {margin-top:10px}
+.scale {-webkit-transform:scale(0);transform:scale(0);}
+
+#logo {width:62px;height:64px;left:50%;top:-12px;transform:translate(-50%,0%)}
+#logo img {width:100%;top:0;left:0;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;
+-webkit-transform:scale(.88) rotate(-45deg) translate(-20px, 20px);transform:scale(.88) rotate(-45deg) translate(-20px, 20px);}
+#logo3b {width:62px;height:64px;left:11px;top:13px;-webkit-transform:scale(.43);transform:scale(.43);}
+
+#purple,#purple2,#purple3 {width:800px;height:100%;background-color:#4a154b;border-radius:0 45px 45px 0;left:-800px}
+#purple,#purple3 {left:-120px;border-radius:45px 0 0 45px}
+#tan {width:100%;height:100%;background-color:#F3EDE5;}
+
+#screen,#screen2 {width:1800px;left:-390px}
+#white {width:234px;height:100%;background-color:#fff;top:0;right:0}
+#cursor {width:30px; left: 450px;  top: 62px}
+
+#cta {width: 236px; left: 470px; top: 29px}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Slack</title>
+    <meta name="description" content="">
+    <meta name="ad.size" content="width=728,height=90">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/MotionPathPlugin.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript">
+        var clickTag = "";
+    </script>
+</head>
+
+<body>
+    <a href="javascript:(function(){open(window.clickTag)})()">
+
+        <div id="banner">
+            <div id="banner-container">
+
+                <img id="txt1" class="fadein width left" src="txt1.png" />
+                <img id="txt2" class="fadein width left" src="txt2.png" />
+
+                <img id="logo2" class="fadein width left" src="logo.png" />
+                <div id="logo">
+                    <img id="" class="fadein blue" src="logo-blue.png" />
+                    <img id="" class="fadein green" src="logo-green.png" />
+                    <img id="" class="fadein yellow" src="logo-yellow.png" />
+                    <img id="" class="fadein red" src="logo-red.png" />
+                </div>
+
+                <div id="pink"></div>
+                <img id="screen" class="fadein top" src="screen.png" />
+                <div id="person1-container" class="scale person-container"></div>
+                <img id="person1" class="scale person" src="girl.jpg" />
+
+                <div id="person2-container" class="scale person-container"></div>
+                <img id="person2" class="scale person" src="guy.jpg" />
+
+                <div id="person3-container" class="scale person-container"></div>
+                <img id="person3" class="scale person" src="girl2.jpg" />
+
+                <div id="person4-container" class="scale person-container"></div>
+                <img id="person4" class="scale person" src="girl3.jpg" />
+
+                <div id="purple"></div>
+                <img id="cta" class="fadein left" src="cta.png" />
+                <!--<img id="cta-txt" class="fadein width left" src="cta-txt.png"/>                   -->
+                <img id="txt3" class="fadein width left" src="txt3.png" />
+                <img id="logo3" class="fadein width left" src="logo.png" />
+                <div id="logo3b" class="fadein left">
+                    <img id="" class=" width" src="logo-blue.png" />
+                    <img id="" class=" width" src="logo-green.png" />
+                    <img id="" class=" width" src="logo-yellow.png" />
+                    <img id="" class=" width" src="logo-red.png" />
+                </div>
+            </div>
+        </div>
+    </a>
+    <script>
+        $('#banner-container').imagesLoaded(function () {
+            // console.log('images loaded');
+            var tl = new TimelineLite();
+            var tl2 = new TimelineLite();
+            var tl3 = new TimelineLite();
+            var tl4 = new TimelineLite();
+            var tl5 = new TimelineLite();
+            CSSPlugin.defaultForce3D = true;
+            gsap.registerPlugin(MotionPathPlugin);
+
+
+            tl.to("#logo img", .3, { rotation: 0 }, "+=.1");
+            tl.to("#logo .blue", .1, { opacity: 1, scale: 1 }, "-=.3");
+            tl.to("#logo .green", .1, { opacity: 1, scale: 1 }, "-=.23");
+            tl.to("#logo .yellow", .1, { opacity: 1, scale: 1 }, "-=.17");
+            tl.to("#logo .red", .1, { opacity: 1, scale: 1 }, "-=.1");
+
+            tl.to("#logo", .4, { x: -321, y: 14, scale: .43 }, "+=.15");
+            tl.to("#logo2", .4, { x: 10, opacity: 1 }, "-=.15");
+            tl.to("#txt1", .5, { x: 10, opacity: 1 }, "-=.3");
+            tl.to("#txt2", .5, { x: 10, opacity: 1 }, "-=.4");
+
+            tl.to("#pink", .35, {
+                x: 800, y: -400, onComplete: function () {
+                    //        $("#person1")[0].play(); 
+                    //	  $("#person4")[0].play();
+                    //      }},"+=1.25").add(playPerson1);                   
+                }
+            }, "+=2");
+            tl.to("#person1-container,#person1", .5, { scale: 1, motionPath: [{ x: -40, y: 20 }, { x: -120, y: 10 }, { x: -220, y: -5 }] }, "-=.1");
+            tl.to("#person2-container,#person2", .5, { scale: 1, motionPath: [{ x: -10, y: 12 }, { x: 10, y: 20 }, { x: 40, y: 0 }] }, "-=.4");
+            tl.to("#person4-container,#person4", .5, { scale: 1, motionPath: [{ x: -10, y: 10 }, { x: 60, y: 0 }, { x: 180, y: -25 }] }, "-=.4");
+            tl.to("#person3-container,#person3", .5, { scale: 1, motionPath: [{ x: 20, y: 15 }, { x: -20, y: 35 }, { x: -80, y: 30 }] }, "-=.4");
+
+            tl.to("#person1-container,#person1", 1.25, { scale: 1, motionPath: [{ x: -218, y: -7 }, { x: -220, y: -5 }] }, "-=.025");
+            tl.to("#person2-container,#person2", 1.25, { scale: 1, motionPath: [{ x: 38, y: -2 }, { x: 40, y: 0 }] }, "-=1.15");
+            tl.to("#person4-container,#person4", 1.25, { scale: 1, motionPath: [{ x: 178, y: -27 }, { x: 180, y: -25 }] }, "-=1.15");
+            tl.to("#person3-container,#person3", 1.25, { scale: 1, motionPath: [{ x: -82, y: 32 }, { x: -80, y: 30 }] }, "-=1.15");
+
+            tl.to(".person,.person-container", .35, { scale: 1.11 }, "-=.1");
+            tl.to("#screen", .35, { opacity: 1, y: -20 }, "+=.15");
+            tl.to("#person1-container,#person1", .35, { scale: .6134, x: 119, y: 17 }, "-=.35");
+            tl.to("#person3-container,#person3", .35, { scale: .6134, x: 170, y: 17 }, "-=.35");
+            tl.to("#person4-container,#person4", .35, { scale: .6134, x: 195, y: 17 }, "-=.35");
+            tl.to("#person2-container,#person2", .35, { scale: .8, x: 152, y: 24 }, "-=.35");
+
+            tl.to("#screen", .4, { x: 250, y: -33, scale: 1.5 }, "+=.7");
+            tl.to("#person1-container,#person1", .4, { scale: 1, x: 419, y: -47 }, "-=.4");
+            tl.to("#person3-container,#person3", .4, { scale: 1, x: 519, y: -47 }, "-=.4");
+            tl.to("#person4-container,#person4", .4, { scale: 1, x: 569, y: -47 }, "-=.4");
+            tl.to("#person2-container,#person2", .4, { scale: 1.2, x: 469, y: -37 }, "-=.4");
+
+            tl.to("#purple", .35, { x: 770 }, "+=1");
+            tl.to("#logo3,#logo3b", .5, { x: 10, opacity: 1 }, "-=.15");
+            tl.to("#txt3", .5, { x: 10, opacity: 1 }, "-=.4");
+            tl.to("#cta", .5, { x: 10, opacity: 1 }, "-=.4");
+            tl.to("#cta", .2, { scale: 1.1 }, "+=.4");
+            tl.to("#cta", .25, {
+                scale: 1, onComplete: function () {
+                    $('#banner-container').on("mouseenter", function () {
+                        tl3.to("#cta", .3, { scale: 1.1 }, "+=0");
+                    });
+                    $('#banner-container').on("mouseleave", function () {
+                        tl2.to("#cta", .3, { scale: 1 }, "+=0");
+                    });
+                }
+            }, "-=0");
+
+
+
+            //  tl.addPause(15);
+            // tl.timeScale(.25);
+
+        });
+    </script>
+
+
+</body>
+
+</html>
