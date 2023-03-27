@@ -62,7 +62,7 @@ body {
 .logoport {
     display: flex;
     align-items: center;
-    margin: 0 20px;
+    margin: 20px;
 }
 
 .logoportimg {
