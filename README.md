@@ -1,5 +1,5 @@
 # Site Fúria Designer
 
-Link: https://furiadesigner.netlify.app/
+Link: https://shynjy.github.io/furiadesigner/
 
 ## Site em construção
