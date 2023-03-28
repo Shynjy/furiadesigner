@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
-.contentbody {
+body {
     font-family: 'Roboto', sans-serif;
+}
+
+.contentbody {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -43,12 +46,11 @@
     display: flex;
     width: 950px;
     margin: 0 auto;
-    /* height: 100vh; */
     flex-direction: column;
-    text-transform: uppercase;
 }
 
 .headerport{
+    text-transform: uppercase;
     text-align: center;
     margin: 10% 0px;
     color: #ef3d4a;
@@ -76,6 +78,7 @@
 
 
 .descript {
+    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     justify-content: center;
